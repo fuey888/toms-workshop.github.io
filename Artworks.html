@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="utf-8">
+  <!-- Meta name is only for jsbin use to identify script -->
+  <meta name="viewport" content="width=device-width">
+  <title>Tom's Blender Workshop</title>
+  <!-- allows jquery functionality for gallery-->
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+<!-- This is the main heading/ home button -->
+<div id="title">
+  <a href="index.html" style="text-decoration:none"><h1> Tom's <span class="titletext">Blender</span> Workshop</h1></a>
+  </div>
+  <!-- THis the links for our top navigation bar-->
+  <div id="navbar">
+    <a href="Aboutme.html">About Me</a>
+    <a class="active" href="Artworks.html">Gallery</a>
+    <a href="guide.html">Guidebook</a>
+    <a href="contact.html">Contact</a>
+  </div>
+<div class="content">
+<br>
+
+<div class="container1">
+  <!-- heading text -->
+  <ul class="image-gallery">
+    <li>
+      <img class="galleryImg" src="./Images/roommaccasthumb.png" alt="McDonald's Room">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/maccasphonethumb.png" alt="McDonald's Phone">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/maccascollagethumb.png" alt="McDonald's Collage">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/maccastvthumb.png" alt="McDonald's TV">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/bedcloudsthumb.jpg" alt="Bed in the Clouds by Mo Eid">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/bluestaircasethumb.jpeg" alt="Blue Staircase in Red Wall Graphic by Mo Eid">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/brainthumb.jpg" alt="Modern Sculpture of Head and Brain by Mo Eid">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/3Dopaquecubethumb.jpg" alt="Purple and Pink Diamond on Blue Background by Uzunov Rostislav">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/pavillionthumb.jpg" alt="A Pavillion in the Middle of the Sea by Mo Eid">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/fireballsthumb.png" alt="Fire in the Sky during Night Time by Uzunov Rostislav">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/cloudandseathumb.jpg" alt="Pink Clouds and Sea by Mo Eid">
+    </li>
+    <li>
+      <img class="galleryImg" src="./Images/3Dcubesthumb.jpg" alt="Yellow and White 3D Cube by Rodion Kutsaiev">
+    </li>
+    
+  </ul>
+</div>
+</div>
+<!-- sitemap not inluded in content div -->
+<div id="sitemap">
+  <table class="sitemap">
+  <tr>
+    <th><a href="index.html">Index</a></th>
+    <th><a href="Artworks.html">Gallery</a></th>
+    <th><a href="Aboutme.html">About Me</a></th>
+    <th><a href="guide.html">Guidebook</a></th>
+    <th><a href="contact.html">Contact</a></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><a href="assignment.html">Assignment</a> <br>
+      <a href="sourcelog.html">Source Log</a> <br>
+      <a href="sitemap.html">Site Map</a><br>
+      <a href="reflection.html">Reflections</a><br>
+      <a href="validation.html">Validation</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<br>
+<br>
+<button class="button buttonlight" onclick="setStyleSheet('CSS/printstyle.css')">Print Theme</button>
+<button class="button buttondark" onclick="setStyleSheet('CSS/style.css')">Dark Theme</button>
+</div>
+
+
+  <!-- below is what enables our modal in html and then in javascript -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img src="#" class="modal-content" id="img01" alt="No Image">
+
+  <!-- Modal Caption (Image Text) -->
+  <div id="caption"></div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- loads jQuery used for modal functionality-->
+<script src="scripts.js"></script> <!-- this loads my own js file --> 
+
+  
+</body>
+</html>

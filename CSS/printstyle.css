@@ -1,0 +1,638 @@
+/* Main */
+body {
+  background-color: white;
+  font-family: Arial, Helvetica;
+  text-align: center;
+  margin: 0;
+  margin-top: 300px;
+}
+h1 {
+  font-size: 29px;
+  display: inline-block;
+}
+h1 span.titletext {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: 21px;
+}
+h3 {
+  text-align: center;
+}
+p {
+  width: 40vw;
+  margin: 0px auto;
+  font-size: 17px;
+}
+
+/* clears default margin+padding */
+body,
+html {
+  margin: 0px;
+}
+
+/* settings for light mode specific styling */
+h1,
+h2,
+h3 {
+  color: black;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: rgb(161, 91, 0);
+}
+
+#navbar,
+#title,
+#sitemap,
+table.sitemap,
+tbody {
+  background-color: rgb(158, 158, 158);
+}
+
+h1 span.titletext {
+  color: black;
+}
+
+#navbar a,
+#navbar a.active,
+#navbar a.hover,
+#sitemap a:visited,
+#sitemap a:active,
+#sitemap a:hover,
+#sitemap a:link {
+  color: black;
+}
+
+#navbar a:hover {
+  color: white;
+}
+
+p.bodylink a,
+p.bodylink a:hover,
+a:link {
+  color: rgb(161, 91, 0);
+}
+
+/* below 2 functions are used to alter the links appearance in body paragraphs */
+p.bodylink a {
+  text-decoration: none;
+}
+p.bodylink a:hover {
+  text-decoration: none;
+}
+
+/* adds padding to any figure elements */
+figure {
+  padding: 70px;
+}
+
+/* The below body and .bg adjustments are for the index background image */
+body,
+html {
+  height: 100%;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("../Images/maccascollage.png");
+  /* Makes the image full height */
+  height: 100vh;
+
+  /* center and scale the image */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* container for the title + menu + social buttons */
+#indextitle {
+  position: relative;
+  padding-top: 10px; /* this allows background-color to extent past text */
+  padding-bottom: 10px;
+}
+
+/* container for main title on non-index pages */
+#title {
+  position: static;
+  padding-top: 10px; /* this allows background-color to extent past text */
+  padding-bottom: 10px;
+}
+
+/*For our navigation bar: */
+/* Add a background color to the top navigation */
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  z-index: 1; /* this allows the navbar to go over other page contents (where z-index = 0) */
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+#navbar a.active {
+  background-color: grey;
+  color: black;
+}
+
+#navbar a:hover {
+  color: #f08935;
+}
+
+/* Page content - prevents sitemap and navbar from intruding on content */
+.content {
+  padding: 50px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 95px;
+}
+
+/* Sitemap at page bottom styling */
+#sitemap {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  bottom: 0px;
+}
+
+/* The below links are to style links in sitemap */
+#sitemap a:link,
+#sitemap a:visited,
+#sitemap a:hover,
+#sitemap a:active {
+  text-decoration: none;
+}
+
+/* mouse over link */
+#sitemap a:hover {
+  color: #7afa98;
+}
+
+/* Feedback form styling */
+/* Style inputs with type="text", select elements and textareas */
+input[type="text"],
+select,
+textarea {
+  border: 1px solid rgb(32, 30, 34);
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  background-color: rgb(41, 38, 43);
+  color: rgb(197, 197, 197);
+  font-family: inherit; /* text in boxes inherit font properties of body */
+  font-size: 15px;
+  width: 100%;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="submit"] {
+  background-color: rgb(67, 205, 150);
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a color */
+input[type="submit"]:hover {
+  background-color: rgb(255, 208, 132);
+}
+
+/* Style the submit button with a specific background color etc */
+input[type="reset"] {
+  background-color: rgb(84, 84, 84);
+  color: rgb(171, 171, 171);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the clear button, add a color */
+input[type="reset"]:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Add a background color and some padding around the contact form and gallery */
+.container1 {
+  background-color: white;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto; /* centers gallery and form */
+}
+
+/* orange horizontal lines */
+hr.new1 {
+  border-color: #ed954d;
+}
+
+/* styling for source and sitemap table caption */
+caption {
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 140, 0);
+  padding-bottom: 15px;
+}
+
+/* sitemap table styling */
+table.sitemap {
+  border-collapse: collapse;
+  border-width: 3pt;
+  background-color: rgb(27, 25, 29);
+  width: 60vw;
+  margin: 0px auto;
+}
+
+/* styling links and writing in table */
+td,
+td a {
+  font-size: 15px;
+}
+
+/* this applies to all tables */
+th,
+th a {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+/* Sourcelog table styling */
+table.sourcelog {
+  border-width: 3pt;
+  background-color: rgb(27, 25, 29);
+  width: 90%;
+  margin: 1px auto;
+  border: 1px solid whitesmoke;
+}
+
+/* gallery position */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  padding-right: 50px;
+}
+
+.image-gallery > li {
+  flex-basis: 300px; /* width: 300px; */
+  list-style: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.image-gallery li img {
+  /* image properties */
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  border-radius: 20px;
+  height: 300px;
+}
+
+.image-gallery::after {
+  /* this ensures that the imgs on last line are not misaligned. */
+  content: "";
+  flex-basis: 300px;
+}
+
+/* provides padding - used in index */
+#padding {
+  height: 50vh;
+}
+
+/* provides margins and padding for index title */
+#indexcontainer {
+  width: 100%;
+  background-color: rgba(32, 30, 34, 0.6);
+  display: inline-block;
+}
+
+/* sets display as none to allow fade javascript to work */
+#indexcontainerfade {
+  display: none;
+  width: 100%;
+}
+
+/* provides margins for sitemap */
+#sitemapmargin {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
+
+/* Styles the image that triggers the gallery modal */
+.galleryImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.galleryImg:hover {
+  opacity: 0.7;
+}
+
+/* background/ styling of the modal */
+.modal {
+  display: none; /* hidden */
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100vw; /* full width */
+  height: 100vh; /* full height */
+  overflow: auto; /* enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* fallback color */
+  background-color: rgba(0, 0, 0, 0.9); /* black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Image text in modal */
+#caption {
+  margin: auto; /* allows the caption width the be the same as image */
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px;
+  height: 150px;
+}
+
+/* Animation to zoom into modal */
+.modal-content,
+#caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* drawing on keyframes functions in webkit framework for zooming effect */
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* adds and modifies close button on modal */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* allows 100% image width on phones etc */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+/* below css is for the icon animations for index image map */
+.iconcontainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 5vw;
+  padding-top: 23vh;
+  padding-right: 70px;
+}
+
+.animatedicon {
+  width: 8vw;
+  height: 8vw;
+  background-position: center;
+  background-size: cover;
+}
+
+/* icon images */
+.icon1 {
+  background-image: url("../Images/Icons/user.png");
+}
+
+/* for 2nd animated image */
+.icon2 {
+  background-image: url("../Images/Icons/gallery.png");
+}
+
+/* for 3rd animated image */
+.icon3 {
+  background-image: url("../Images/Icons/book.png");
+}
+
+/* for 4th animated image */
+.icon4 {
+  background-image: url("../Images/Icons/letter.png");
+}
+
+/* code for animation functionality */
+.fadeInBottom {
+  -webkit-animation: fadeInBottom 4s both; /* for chrome functionality - animation plays after 1.2 seconds*/
+  -moz-animation: fadeInBottom 4s both; /* enables in mozilla firefox version 5+ */
+  -o-animation: fadeInBottom 4s both; /* enables in opera 12+ */
+  animation: fadeInBottom 4s both; /* enables on internet explorer 10+ */
+}
+
+@-webkit-keyframes fadeInBottom {
+  0% {
+    /* this is opacity at start of animation */
+    opacity: 0;
+    -webkit-transform: translateY(
+      100px
+    ); /* where the image starts spatially - use TranslateX for left or right */
+  }
+  100% {
+    /* this is opacity at end of animation */
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-moz-keyframes fadeInBottom {
+  0% {
+    /* this is opacity at start of animation */
+    opacity: 0;
+    -webkit-transform: translateY(100px); /* where the image starts spatially */
+  }
+  100% {
+    /* this is opacity at end of animation */
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@-o-keyframes fadeInBottom {
+  0% {
+    /* this is opacity at start of animation */
+    opacity: 0;
+    -webkit-transform: translateY(100px); /* where the image starts spatially */
+  }
+  100% {
+    /* this is opacity at end of animation */
+    opacity: 1;
+    -webkit-transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBottom {
+  0% {
+    /* this is opacity at start of animation */
+    opacity: 0;
+    transform: translateY(100px); /* where the image starts spatially */
+  }
+  100% {
+    /* this is opacity at end of animation */
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* parent container for vid and text in guide */
+.guide-container {
+  margin: auto;
+  width: 90%;
+  background-color: white;
+  padding: 30px;
+  display: flex;
+}
+
+/* container for vids in guide */
+.guide-container-a {
+  width: 100%;
+}
+
+/* adds padding in guide to space each entry */
+.guide-padding {
+  padding: 10px;
+}
+
+/* adds border around youtube videos */
+iframe {
+  border: 3px solid #fc9042;
+}
+
+iframe:hover {
+  border: 3px solid rgb(67, 205, 150);
+}
+
+.fa {
+  padding: 10px;
+  font-size: 3vw;
+  width: 3vw;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* css for theme buttons */
+.button {
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 2px solid #f48347;
+}
+
+.buttondark {
+  background-color: black;
+  color: white;
+}
+
+.buttonlight {
+  background-color: white;
+  color: black;
+}
+
+.button:hover {
+  background-color: #f4742f;
+  color: black;
+}

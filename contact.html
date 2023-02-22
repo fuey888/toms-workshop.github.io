@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tom's Blender Workshop</title>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+<body>
+
+<!-- This is the main heading/ home button -->
+<div id="title">
+  <a href="index.html" style="text-decoration:none"><h1><span class="titletext">Tom's Blender Workshop</span></h1></a>
+  </div>
+  <!-- THis the links for our top navigation bar-->
+  <div id="navbar">
+    <a href="Aboutme.html">About Me</a>
+    <a href="Artworks.html">Gallery</a>
+    <a href="guide.html">Guidebook</a>
+    <a class="active" href="contact.html">Contact</a>
+</div>
+
+<div class="content">
+<!-- method, enctype, name below are a rudimentary html method for sending form content to email - use PHP instead-->
+<div class="container1">
+<hr class="new1">
+<h2 style="font-size:20px;">Get in touch using the form below!</h2>
+<hr class="new1">
+<br>
+<br>
+  <form action="mailto:tom.99@live.com"
+  method="POST"
+  enctype="multipart/form-data"
+  name="EmailForm">
+
+    <label for="fname">Your Full Name:</label>
+    <input type="text" id="fname" name="FullName" placeholder="Your full name...">
+<br>
+<br>
+<!-- used the select function instead of the recommended one because it takes up less space when not opened. -->
+    <label for="Gender">Your Gender:</label>
+    <select id="Gender" name="Gender">
+      <option value="Notchosen">None Specified</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+      <option value="Other">Other</option>
+      <option value="Nosay">Prefer not to say</option>
+    </select>
+<br>
+<br>
+
+    <label for="feedback">What do you think of my website?</label>
+    <textarea id="feedback" name="Feedback" placeholder="Write here..." style="height:150px"></textarea>
+
+<br>
+<br>
+    <label for="Request">What would you like to see me create?</label>
+    <textarea id="Request" name="Requests" placeholder="Write here..." style="height:150px"></textarea>
+    <hr class="new1">
+    <input type="reset" value="Clear">
+    &nbsp; 
+    <input type="submit" value="Send"> 
+    <hr class="new1">
+  </form>
+</div>
+</div>
+<!-- sitemap not inluded in content div -->
+<div id="sitemap">
+  <table class="sitemap">
+  <tr>
+    <th><a href="index.html">Index</a></th>
+    <th><a href="Artworks.html">Gallery</a></th>
+    <th><a href="Aboutme.html">About Me</a></th>
+    <th><a href="guide.html">Guidebook</a></th>
+    <th><a href="contact.html">Contact</a></th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td><a href="assignment.html">Assignment</a> <br>
+      <a href="sourcelog.html">Source Log</a> <br>
+      <a href="sitemap.html">Site Map</a><br>
+      <a href="reflection.html">Reflections</a><br>
+      <a href="validation.html">Validation</a></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<br>
+<br>
+<button class="button buttonlight" onclick="setStyleSheet('CSS/printstyle.css')">Print Theme</button>
+<button class="button buttondark" onclick="setStyleSheet('CSS/style.css')">Dark Theme</button>
+</div>
+<script src="scripts.js"></script> <!-- this loads my own js file -->   
+</body>
+</html>

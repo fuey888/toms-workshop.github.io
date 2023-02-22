@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <!-- Meta name is only for jsbin use to identify script -->
+    <meta name="viewport" content="width=device-width">
+    <title>Tom's Blender Workshop</title>
+    <!-- Below is an internal stylesheet, get around making and external one -->
+    <link
+      id="stylesheet"
+      rel="stylesheet"
+      type="text/css"
+      href="CSS/style.css"
+      >
+  </head>
+
+  <body>
+    <!-- This is the main heading/ home button -->
+    <div id="title">
+      <a href="index.html" style="text-decoration: none"
+        ><h1>Tom's Blender <span class="titletext">Workshop</span></h1></a
+      >
+    </div>
+    <!-- THis the links for our top navigation bar-->
+    <div id="navbar">
+      <a href="Aboutme.html">About Me</a>
+      <a href="Artworks.html">Gallery</a>
+      <a class="active" href="guide.html">Guidebook</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="content">
+      <br>
+
+      <div class="guide-container">
+        <div class="guide-container-a">
+          <h2>Oscillating Torus</h2>
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/NGV5GDMz6oA"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            Its's a big donut. Takes a while to make but looks fantastic and can
+            be easily transformed into whatever you want.
+          </p>
+        </div>
+      </div>
+      <div class="guide-padding"></div>
+
+      <div class="guide-container">
+        <div class="guide-container-a">
+          <h2>Black Hole</h2>
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/5naMFeWTBeY"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            The tutorial is outdated at parts and requires some searching
+            through the comments to find a solution, but looks amazing when
+            finished. Cant customise much except the colour.
+          </p>
+        </div>
+      </div>
+      <div class="guide-padding"></div>
+
+      <div class="guide-container">
+        <div class="guide-container-a">
+          <h2>Interdimensional Triangle</h2>
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/WENCKOPrwVs"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>Crazy triangle thing.</p>
+        </div>
+      </div>
+      <div class="guide-padding"></div>
+
+      <div class="guide-container">
+        <div class="guide-container-a">
+          <h2>Fluffy Clouds</h2>
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/5QxCa-bsbK0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>I want to eat them.</p>
+        </div>
+      </div>
+      <div class="guide-padding"></div>
+
+      <div class="guide-container">
+        <div class="guide-container-a">
+          <h2>Living Room</h2>
+          <iframe
+            width="350"
+            height="250"
+            src="https://www.youtube.com/embed/8XZQhLRQTDw"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>
+            This one took ages to finish. But the end result is a very versatile
+            and customisable room setup. I think the couch was the biggest
+            challenge. The creation, lighting and framing of the room is the
+            important technique but the furniture can be easily substituted
+            easily.
+          </p>
+        </div>
+      </div>
+      <div class="guide-padding"></div>
+
+      <div class="box"></div>
+    </div>
+
+    <!-- sitemap not inluded in content div -->
+    <div id="sitemap">
+      <table class="sitemap">
+        <tr>
+          <th><a href="index.html">Index</a></th>
+          <th><a href="Artworks.html">Gallery</a></th>
+          <th><a href="Aboutme.html">About Me</a></th>
+          <th><a href="guide.html">Guidebook</a></th>
+          <th><a href="contact.html">Contact</a></th>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td>
+            <a href="assignment.html">Assignment</a> <br>
+            <a href="sourcelog.html">Source Log</a> <br>
+            <a href="sitemap.html">Site Map</a><br>
+            <a href="reflection.html">Reflections</a><br>
+            <a href="validation.html">Validation</a>
+          </td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+      <br>
+      <br>
+      <button
+        class="button buttonlight"
+        onclick="setStyleSheet('CSS/printstyle.css')"
+      >
+        Print Theme
+      </button>
+      <button
+        class="button buttondark"
+        onclick="setStyleSheet('CSS/style.css')"
+      >
+        Dark Theme
+      </button>
+    </div>
+    <script src="scripts.js"></script>
+    <!-- this loads my own js file -->
+  </body>
+</html>
